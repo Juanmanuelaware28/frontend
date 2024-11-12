@@ -1,0 +1,195 @@
+/* src/styles.css */
+/* Definimos variables para los colores */
+:root {
+  --primary-color: #007bff; /* Azul */
+  --secondary-color: #6f42c1; /* Violeta */
+  --background-color: #3a1bd3; /* Fondo claro */
+  --text-color: #212529; /* Texto oscuro */
+  --card-background: #ffffff; /* Fondo blanco para las tarjetas */
+  --btn-hover-color: #ac43ed; /* Azul oscuro para el hover */
+  --btn-hover-violet: #5a2a8c; /* Violeta oscuro para el hover */
+}
+
+/* Estilos generales */
+body {
+  background-color: var(--background-color);
+  font-family: 'Arial', sans-serif;
+  color:rgb(231, 225, 236)
+}
+
+/* Título principal SIA */
+h1 {
+  font-size: 3rem;
+  font-family: 'Arial', sans-serif;
+  color: var(--secondary-color);
+}
+
+/* Estilo para los formularios y tarjetas */
+.card {
+  background-color: var(--card-background);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* styles.css */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Esquinas redondeadas para un mejor efecto visual */
+  transition: box-shadow 0.3s ease-in-out; /* Suaviza la transición del sombra */
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(185, 166, 166, 0.15), 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #6f42c1;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #c8b9de;
+}
+
+
+.card-header {
+  background-color: var(--primary-color);
+  color: rgb(213, 182, 239);
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  padding: 30px;
+  background-color: #f1f0f3;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(52, 140, 235, 0.5);
+}
+
+/* Botones */
+button {
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-hover-color);
+}
+
+.btn-success {
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: var(--btn-hover-violet);
+}
+
+/* Estilo para el layout de la página */
+.container {
+  margin-top: 50px;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Estilo para los enlaces */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--btn-hover-color);
+}
+
+/* Estilo para las listas de asignaturas */
+.list-group-item {
+  font-size: 16px;
+  border: none;
+  background-color: #f8f9fa;
+}
+
+.list-group-item:hover {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.list-group-item button {
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list-group-item button:hover {
+  color: var(--btn-hover-violet);
+}
+
+/* styles.css */
+.card {
+  position: relative; /* Necesario para posicionar las sombras correctamente */
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra sutil normal */
+    0 10px 30px rgba(0, 0, 0, 0.2), /* Sombra adicional más difusa */
+    0 0 80px rgba(138, 43, 226, 0.4); /* Sombra violeta detrás de la card */
+  border-radius: 10px; /* Esquinas redondeadas */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave de las sombras */
+}
+
+.card:hover {
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.15),  /* Sombra más sutil cuando hover */
+    0 20px 50px rgba(0, 0, 0, 0.3),  /* Sombra más grande */
+    0 0 100px rgba(138, 43, 226, 0.6); /* Sombra violeta más grande y más difusa */
+}
+
+.card-header {
+  background-color: #6f42c1; /* Color del encabezado */
+  color: white;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #563d7c;
+}
